@@ -16,18 +16,6 @@ def ver_contatos(contatos):
         print(f"{indice} - {nome_contato} - {telefone_contato} - {email_contato} - Favorito[{favorito}]")
     return
 
-def atualizar_nome_tarefa(tarefas, indice_tarefa, novo_nome):
-    if indice_tarefa < 1 or indice_tarefa > len(tarefas):
-        os.system("clear")
-        print(f"Tarefa {indice_tarefa} inexistente")
-        return
-    else:
-        os.system("clear")
-        indice_tarefa = indice_tarefa - 1
-        tarefas[indice_tarefa]["tarefa"] = novo_nome
-        print(f"Tarefa atualizada para {novo_nome}.")
-    return
-
 def atualizar_contato(contatos, indice_contato, novo_nome, novo_telefone, novo_email, novo_favorito):
     os.system("clear")
     indice_contato = indice_contato - 1
