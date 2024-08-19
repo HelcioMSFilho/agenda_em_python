@@ -27,6 +27,7 @@ def atualizar_nome_tarefa(tarefas, indice_tarefa, novo_nome):
         tarefas[indice_tarefa]["tarefa"] = novo_nome
         print(f"Tarefa atualizada para {novo_nome}.")
     return
+
 def atualizar_contato(contatos, indice_contato, novo_nome, novo_telefone, novo_email, novo_favorito):
     os.system("clear")
     indice_contato = indice_contato - 1
@@ -71,9 +72,7 @@ def deletar_contatos(contatos, indice_contato):
         del contatos[indice_contato]
         print(f"Contato {indice_contato+1} apagado.")
     return
-    
 
-tarefas = []
 contatos = []
 
 os.system("clear")
@@ -137,6 +136,5 @@ while True:
     elif escolha == "7":
         os.system("clear")
         break
-
-
+    
 print ("Programa finalizado")
